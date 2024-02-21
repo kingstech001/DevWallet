@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:wght@700&display=swap");
+
+/* css variable */
+:root {
+  --heading-font-size: clamp(1.5rem, 4.5vw, 20rem);
+  --paragraph-font-size: clamp(15px, 2vw, 20px);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Noto Sans", sans-serif;
+}
+
+/* mobile design start */
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.logo {
+  width: 30%;
+  cursor: pointer;
+}
+
+.nav-menu {
+  display: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+.hamburger div:nth-child(1) {
+  background-color: black;
+  width: 30px;
+  height: 2.8px;
+  border-radius: 10px;
+}
+
+.hamburger div:nth-child(2) {
+  background-color: black;
+  width: 30px;
+  height: 3.2px;
+  margin: 2px 0;
+  border-radius: 10px;
+}
+
+.hamburger div:nth-child(3) {
+  background-color: black;
+  width: 20px;
+  height: 3.2px;
+  border-radius: 10px;
+}
+
+section {
+  padding: 0 5rem;
+}
+
+h1 {
+  font-size: var(--heading-font-size);
+  text-transform: capitalize;
+}
+
+p {
+  font-size: var(--paragraph-font-size);
+  margin: 30px 0;
+}
+
+.create-account-bt {
+  background-color: rgb(37, 108, 225);
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  width: 200px;
+  cursor: pointer;
+}
+
+.hero-image-container {
+  display: none;
+}
+
+.hero-image {
+  width: 100%;
+}
+
+.section-2 {
+  margin: 40px 0;
+}
+
+.section-3 {
+  background-color: rgb(25, 118, 210);
+  transform: skewY(-2deg);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: rgb(255, 255, 255);
+}
+
+.section-3 .content,
+.section-3 .image-container {
+  transform: skewY(2deg);
+}
+
+.section-3 button {
+  background-color: rgb(17, 198, 243);
+  padding: 1rem 0;
+  border: none;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  width: 150px;
+  cursor: pointer;
+}
+
+/* mobile design end */
+
+/* table design start */
+@media only screen and (min-width: 650px) {
+  .section-3 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  section {
+    padding: 2rem;
+  }
+
+  ul {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  ul li a {
+    color: black;
+  }
+
+  ul li {
+    transition: all 1s ease-in-out;
+  }
+
+  ul li:hover {
+    background-color: rgba(185, 181, 181, 0.101);
+    padding: 10px 20px;
+    border-radius: 25px;
+  }
+
+  .sign-up-bt {
+    padding: 15px 35px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(37, 108, 225);
+    color: rgb(255, 255, 255);
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+  }
+
+  .sign-up-bt:hover {
+    background-color: rgb(38, 56, 54);
+    border-radius: 15px;
+  }
+
+  .hero-image-container {
+    display: block;
+  }
+
+  .section-1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .section-1 div {
+    width: 50%;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .section-2 {
+    display: flex;
+    align-items: center;
+  }
+
+  .section-2 div {
+    width: 50%;
+  }
+
+  .section-3 {
+    flex-direction: row-reverse;
+    gap: 5rem;
+  }
+
+  .section-3 div {
+    width: 50%;
+  }
+
+  .section-3 .image-container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  .section-4 {
+    display: flex;
+    padding: 2rem;
+  }
+
+  .section-4 div {
+    width: 50%;
+  }
+}
+
+/* tablet design end */
+
+/* desktop design start */
+@media only screen and (min-width: 950px) {
+  .nav-container {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+
+/* desktop design end */
