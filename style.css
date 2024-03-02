@@ -181,7 +181,7 @@ p {
   }
 
   .section-1 div {
-    width: 50%;
+    flex: 1;
   }
 
   .hero-image {
@@ -194,7 +194,7 @@ p {
   }
 
   .section-2 div {
-    width: 50%;
+    flex: 1;
   }
 
   .section-3 {
@@ -203,7 +203,7 @@ p {
   }
 
   .section-3 div {
-    width: 50%;
+    flex: 1;
   }
 
   .section-3 .image-container {
@@ -217,7 +217,7 @@ p {
   }
 
   .section-4 div {
-    width: 50%;
+    flex: 1;
   }
 }
 
